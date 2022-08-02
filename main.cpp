@@ -1,23 +1,22 @@
 #include <iostream>
-#include<string.h>
+
 using namespace std;
 
 int main()
 {
-    char s[100],s1[100];
-    int rev;
-    cout<<"Enter value=";
-    cin>>s;
-    strcpy(s1,s);
-    strrev(s1);
-    rev=strcmp(s,s1);
-    if(rev==0)
+    float w,r,salary;
+    cout<<"Enter work hour:";
+    cin>>w;
+    cout<<"Enter the value of rate:";
+    cin>>r;
+    if(w<=40)
     {
-        cout<<s1<<endl;
+        salary=w*r;
+        cout<<"Gross Payment:"<<salary<<endl;
     }
     else
     {
-        cout<<"it is not palindrome";
+        cout<<"Congratulation!you will get promotion";
     }
     return 0;
 }
